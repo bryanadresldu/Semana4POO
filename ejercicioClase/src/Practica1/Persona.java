@@ -2,10 +2,11 @@ package Practica1;
 
 public class Persona {
     private String nombre;
+    private int edad;
 
-
-    public void imprimir() {
-              System.out.println("Nombre de la persona: "+nombre);
+    public Persona() {
+        this.nombre = "Felipe";
+        this.edad = 30;
     }
 
     public String getNombre() {
@@ -14,5 +15,17 @@ public class Persona {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public void imprimir() {
+        System.out.println("Nombre de la persona: "+nombre+"tiene "+edad+" anios");
     }
 }
